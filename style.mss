@@ -50,19 +50,6 @@ Map {
   raster-opacity: 1;
 }
 
-#color-arid,
-#color-warm,
-#color-arid-warm-mix {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-}
-
-#urban-areas {
-  polygon-fill:black;
-  polygon-opacity:.3;
-  /*image-filters: agg-stack-blur(5, 5);*/
-}
-
 #us-mex,
 #californiaeast {
   polygon-opacity:0;
@@ -83,4 +70,17 @@ Map {
     line-join: round;
     line-cap: round;
   }
+}
+
+#color-arid,
+#color-warm,
+#color-arid-warm-mix {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+}
+
+#urban-areas {
+  polygon-fill:black;
+  polygon-opacity:.3;
+  /*image-filters: agg-stack-blur(5, 5);*/
 }
