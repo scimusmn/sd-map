@@ -32,12 +32,6 @@ Map {
   marker-allow-overlap:true;
 }
 
-#states {
-  line-color:#000;
-  line-width:1;
-  polygon-opacity:0;
-}
-
 #ocean {
   polygon-fill:@wetlands;
 }
