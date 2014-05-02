@@ -58,7 +58,13 @@ Map {
   /*raster-opacity: 0.8;*/
 }
 
-#color {
+#color-arid {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+}
+
+
+#color-warm {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
 }
