@@ -56,7 +56,9 @@ Map {
   /*raster-opacity: 0.8;*/
 }
 
-#color-arid {
+#color-arid,
+#color-warm,
+#color-arid-warm-mix {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
 }
