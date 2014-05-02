@@ -63,16 +63,14 @@ Map {
   raster-comp-op: multiply;
 }
 
-
-#color-warm {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
+#urban-areas {
+  polygon-fill:black;
+  polygon-opacity:.3;
+  /*image-filters: agg-stack-blur(5, 5);*/
 }
 
-#urban-areas {
-  line-color:#000;
-  line-width:5;
-  polygon-fill:#000;
+#us-mex,
+#californiaeast {
   polygon-opacity:0;
   image-filters: agg-stack-blur(5,5);
 }
