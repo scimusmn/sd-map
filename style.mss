@@ -8,8 +8,6 @@
 @sd-background: #E2D9C2;
 
 Map {
-  background-color: #b8dee6;
-  background-color: #ff0000;
   background-color: #FFF;
 }
 
