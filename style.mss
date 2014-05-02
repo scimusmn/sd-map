@@ -72,5 +72,21 @@ Map {
 #us-mex,
 #californiaeast {
   polygon-opacity:0;
-  image-filters: agg-stack-blur(5,5);
+  polygon-fill:#ae8;
+  ::case {
+    line-color:#fff;
+    line-width:5;
+    line-opacity: .3;
+    line-comp-op: screen;
+    line-join: round;
+    line-cap: round;
+  }
+  ::fill {
+    line-color:#FFF;
+    line-width:1;
+    line-opacity: .7;
+    line-comp-op: overlay;
+    line-join: round;
+    line-cap: round;
+  }
 }
