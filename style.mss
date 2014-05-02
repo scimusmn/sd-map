@@ -47,7 +47,7 @@ Map {
 }
 
 #slopes {
-  /*raster-opacity: 0.8;*/
+  raster-opacity: 1;
 }
 
 #color-arid,
