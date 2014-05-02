@@ -13,51 +13,6 @@ Map {
   background-color: #FFF;
 }
 
-#countries {
-  ::outline {
-    /*line-color: #85c5d3;*/
-    line-color: #000000;
-    line-width: 3;
-    line-join: round;
-  }
-  polygon-fill: #fff;
-}
-
-
-#hillshades,
-#slopes,
-#ne2hrlcsrwdr3785 {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-}
-
-#hillshades {
-  raster-opacity: 0.6;
-}
-
-#slopeshades {
-  raster-opacity: 0.1;
-}
-
-#color {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-}
-
-#ocean {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#527193;
-}
-
-#urban-areas {
-  line-width:0;
-  polygon-fill:#fff;
-  polygon-opacity:.2;
-  image-filters: agg-stack-blur(1,1);
-}
-
 #pop-places-points {
   text-name: [NAME];
   text-face-name: 'Futura Medium';
@@ -72,15 +27,46 @@ Map {
   text-dx: 10;
   text-dy: 10;
   text-placements: 'NE';
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
+  marker-width:10;
+  marker-fill:@attic;
+  marker-line-color:#FFF;
+  marker-line-width:1;
   marker-allow-overlap:true;
 }
-
 
 #states {
   line-color:#000;
   line-width:1;
   polygon-opacity:0;
+}
+
+#ocean {
+  polygon-fill:@wetlands;
+}
+
+#hillshades,
+#slopes {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+}
+
+#hillshades {
+  raster-opacity: 0.6;
+}
+
+#slopes {
+  /*raster-opacity: 0.8;*/
+}
+
+#color {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+}
+
+#urban-areas {
+  line-color:#000;
+  line-width:5;
+  polygon-fill:#000;
+  polygon-opacity:0;
+  image-filters: agg-stack-blur(5,5);
 }
