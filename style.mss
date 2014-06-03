@@ -179,3 +179,22 @@ Map {
 #colorcustomv03 {
   raster-opacity:1;
 }
+
+
+#labels {
+  text-name: [Label];
+  text-face-name: 'Futura Medium';
+  text-size: 32;
+  text-fill: #DDD;
+  text-opacity: .8;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-halo-radius: 1.5;
+  text-halo-fill: #666;
+  text-min-distance: 2;
+  text-placement-type: simple;
+  text-dx: 10;
+  text-dy: 10;
+  text-placements: 'NE';
+  marker-width:0;
+}
