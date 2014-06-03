@@ -8,11 +8,15 @@
 @sd-background: #E2D9C2;
 
 Map {
-  background-color: #FFF;
+  /*background-color: #69813a;*/
+  /*background-color: #e2d9c2;*/
+  /*background-color: #b5b9ae;*/
+  /*background-color: #AEAB9D*/
+  background-color: #fff;
 }
 
-#pop-places-points {
-  text-name: [NAME];
+#cities {
+  text-name: [name];
   text-face-name: 'Futura Medium';
   text-size: 16;
   text-fill: #222;
@@ -30,6 +34,11 @@ Map {
   marker-line-color:#FFF;
   marker-line-width:1;
   marker-allow-overlap:true;
+  [name = 'San Diego'] {
+    text-placements: 'SW';
+    text-dx: 20;
+    text-dy: 15;
+  }
 }
 
 #ocean {
@@ -74,13 +83,98 @@ Map {
 
 #color-arid,
 #color-warm,
-#color-arid-warm-mix {
+#color-arid-warm-mix,
+#color-custom-v01,
+#color-custom-v02 {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
+  raster-opacity: .8;
 }
 
 #urban-areas {
   polygon-fill:black;
   polygon-opacity:.3;
   /*image-filters: agg-stack-blur(5, 5);*/
+}
+
+
+#torreypines {
+  line-width:0;
+  polygon-opacity:1;
+  polygon-fill:#59a84e;
+  /*polygon-fill:#3c5139;*/
+  /*polygon-fill:#23c406;*/
+  /*polygon-fill:#69813a;*/
+  /*polygon-fill:#ae8;*/
+  line-join: round;
+  line-cap: round;
+}
+
+
+#pinutorrwgs84 {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
+  polygon-fill:#ae8;
+}
+
+#i5,
+#i8,
+#i10,
+#i15 {
+  /*line-width:3;*/
+  /*line-opacity:.5;*/
+  /*line-join: round;*/
+  /*line-cap: round;*/
+  /*line-color:#FFF;*/
+  ::case {
+    line-width: 5;
+    line-color:#d83;
+    line-opacity:.2;
+  }
+  ::fill {
+    line-width: 2.5;
+    line-color:#fe3;
+    line-opacity:.2;
+  }
+}
+
+#i5 {
+  [length = 1391.39] {
+    text-name: [prefix] + ' -' + [number];
+    text-face-name: 'Futura Medium';
+    text-size: 14;
+    text-fill: #222;
+    text-halo-radius: 1.5;
+    text-halo-fill: #fff;
+    text-placement: line;
+  }
+}
+
+#i15 {
+  [uident = 6133] {
+    text-name: [prefix] + ' -' + [number];
+    text-face-name: 'Futura Medium';
+    text-size: 14;
+    text-fill: #222;
+    text-halo-radius: 1.5;
+    text-halo-fill: #fff;
+    text-placement: line;
+  }
+}
+
+#i8,
+#i10 {
+    text-name: [prefix] + ' -' + [number];
+    text-face-name: 'Futura Medium';
+    text-size: 14;
+    text-fill: #222;
+    text-halo-radius: 1.5;
+    text-halo-fill: #fff;
+    text-placement: line;
+}
+
+
+#colorcustomv03 {
+  raster-opacity:1;
 }
