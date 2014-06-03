@@ -85,7 +85,8 @@ Map {
 #color-warm,
 #color-arid-warm-mix,
 #color-custom-v01,
-#color-custom-v02 {
+#color-custom-v02,
+#color-custom-v03 {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
   raster-opacity: .8;
@@ -130,12 +131,12 @@ Map {
   ::case {
     line-width: 5;
     line-color:#d83;
-    line-opacity:.2;
+    line-opacity:.3;
   }
   ::fill {
     line-width: 2.5;
     line-color:#fe3;
-    line-opacity:.2;
+    line-opacity:.3;
   }
 }
 
