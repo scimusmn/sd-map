@@ -18,7 +18,7 @@ Map {
 #cities {
   text-name: [name];
   text-face-name: 'Futura Medium';
-  text-size: 16;
+  text-size: 18;
   text-fill: #222;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -26,8 +26,8 @@ Map {
   text-halo-fill: #fff;
   text-min-distance: 2;
   text-placement-type: simple;
-  text-dx: 10;
-  text-dy: 10;
+  text-dx: 7;
+  text-dy: 7;
   text-placements: 'NE';
   marker-width:10;
   marker-fill:@attic;
