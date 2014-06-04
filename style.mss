@@ -236,4 +236,72 @@ Map {
   text-dy: 10;
   text-placements: 'NE';
   marker-width:0;
+  [Label = 'Mexico'] {
+    text-dx: 5;
+    text-dy: -7;
+  }
+}
+
+#labels-roads {
+  point-allow-overlap: true;
+  point-transform:"scale(.04)";
+  [Label = 'I-5'] {
+    point-file:url(icons/I-5.svg);
+  }
+  [Label = 'I-8'] {
+    point-file:url(icons/I-8.svg);
+  }
+  [Label = 'I-10'] {
+    point-file:url(icons/I-10.svg);
+  }
+  [Label = 'I-15'] {
+    point-file:url(icons/I-15.svg);
+  }
+}
+
+.rivers {
+  line-width:1;
+  line-color:@wetlands;
+  line-opacity: .7;
+  line-join: round;
+}
+
+.lakes {
+  line-color:@wetlands;
+  line-width:0.5;
+  line-opacity: .5;
+  line-join: round;
+  polygon-opacity:.5;
+  polygon-fill:@wetlands;
+}
+
+#bath-200 {
+  polygon-opacity:.3;
+  polygon-fill:#4c6887;
+}
+
+#bath-1000 {
+  polygon-opacity:.3;
+  polygon-fill:#476280;
+}
+
+#bath-2000 {
+  polygon-opacity:.3;
+  polygon-fill:#455e7a;
+}
+
+#bath-3000 {
+  polygon-opacity:.3;
+  polygon-fill:#425a75;
+}
+
+#bath-4000 {
+  polygon-opacity:.3;
+  polygon-fill:#3f5670;
+}
+
+
+#50m {
+  line-width:1;
+  line-color:green;
 }
