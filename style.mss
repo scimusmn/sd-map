@@ -35,6 +35,16 @@ Map {
   marker-line-color:#FFF;
   marker-line-width:1;
   marker-allow-overlap:true;
+  [name = 'Blythe'] {
+    text-placements: 'NW';
+    text-dx: 5;
+    text-dy: 7;
+  }
+  [name = 'Riverside'] {
+    text-placements: 'SE';
+    text-dx: 5;
+    text-dy: 5;
+  }
   [name = 'San Diego'] {
     text-placements: 'SW';
     text-dx: 20;
