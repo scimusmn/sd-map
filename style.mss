@@ -47,8 +47,8 @@ Map {
   }
   [name = 'San Diego'] {
     text-placements: 'SW';
-    text-dx: 20;
-    text-dy: 15;
+    text-dx: 10;
+    text-dy: 7;
   }
 }
 
