@@ -54,6 +54,11 @@ Map {
 
 #ocean {
   polygon-fill:@wetlands;
+  /*polygon-fill:#97adc5;*/
+  line-color:#b1cdeb;
+  /*line-color:#6e97c4;*/
+  line-width:1;
+  line-join: round;
 }
 
 #hillshades,
