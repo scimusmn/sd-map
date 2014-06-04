@@ -76,7 +76,9 @@ Map {
 }
 
 #us-mex,
-#californiaeast {
+#californiaeast,
+#socalstates,
+#nevada {
   polygon-opacity:0;
   polygon-fill:#ae8;
   ::case {
