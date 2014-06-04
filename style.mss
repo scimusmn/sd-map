@@ -219,16 +219,17 @@ Map {
 }
 
 
-#labels {
+#labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
-  text-size: 32;
-  text-fill: #DDD;
-  text-opacity: .8;
+  text-size: 24;
+  text-fill: #EEE;
+  /*text-fill: #DDD;*/
+  text-opacity: .85;
   text-wrap-width: 60;
   text-wrap-before: true;
   text-halo-radius: 1.5;
-  text-halo-fill: #666;
+  text-halo-fill: #AAA;
   text-min-distance: 2;
   text-placement-type: simple;
   text-dx: 10;
