@@ -178,40 +178,40 @@ Map {
   }
 }
 
-#i5 {
-  [length = 1391.39] {
-    text-name: [prefix] + ' -' + [number];
-    text-face-name: 'Futura Medium';
-    text-size: 14;
-    text-fill: #222;
-    text-halo-radius: 1.5;
-    text-halo-fill: #fff;
-    text-placement: line;
-  }
-}
+/*#i5 {*/
+  /*[length = 1391.39] {*/
+    /*text-name: [prefix] + ' -' + [number];*/
+    /*text-face-name: 'Futura Medium';*/
+    /*text-size: 14;*/
+    /*text-fill: #222;*/
+    /*text-halo-radius: 1.5;*/
+    /*text-halo-fill: #fff;*/
+    /*text-placement: line;*/
+  /*}*/
+/*}*/
 
-#i15 {
-  [uident = 6133] {
-    text-name: [prefix] + ' -' + [number];
-    text-face-name: 'Futura Medium';
-    text-size: 14;
-    text-fill: #222;
-    text-halo-radius: 1.5;
-    text-halo-fill: #fff;
-    text-placement: line;
-  }
-}
+/*#i15 {*/
+  /*[uident = 6133] {*/
+    /*text-name: [prefix] + ' -' + [number];*/
+    /*text-face-name: 'Futura Medium';*/
+    /*text-size: 14;*/
+    /*text-fill: #222;*/
+    /*text-halo-radius: 1.5;*/
+    /*text-halo-fill: #fff;*/
+    /*text-placement: line;*/
+  /*}*/
+/*}*/
 
-#i8,
-#i10 {
-    text-name: [prefix] + ' -' + [number];
-    text-face-name: 'Futura Medium';
-    text-size: 14;
-    text-fill: #222;
-    text-halo-radius: 1.5;
-    text-halo-fill: #fff;
-    text-placement: line;
-}
+/*#i8,*/
+/*#i10 {*/
+    /*text-name: [prefix] + ' -' + [number];*/
+    /*text-face-name: 'Futura Medium';*/
+    /*text-size: 14;*/
+    /*text-fill: #222;*/
+    /*text-halo-radius: 1.5;*/
+    /*text-halo-fill: #fff;*/
+    /*text-placement: line;*/
+/*}*/
 
 
 #colorcustomv03 {
