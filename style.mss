@@ -29,7 +29,8 @@ Map {
   text-dx: 7;
   text-dy: 7;
   text-placements: 'NE';
-  marker-width:10;
+  text-allow-overlap: true;
+  marker-width:8;
   marker-fill:@attic;
   marker-line-color:#FFF;
   marker-line-width:1;
