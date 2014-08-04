@@ -204,7 +204,6 @@ Map {
   }
 }
 
-
 /**
  ******************************************************************************
  * Natural features
@@ -293,6 +292,17 @@ Map {
   raster-opacity: .8;
 }
 
+/**
+ *****************************************************************************
+ * Component specific data
+ *****************************************************************************
+ */
+
+/**
+ * Torrey Pines
+ *
+ * TODO which is the park and which is the species extent?
+ */
 #torreypines {
   line-width:0;
   polygon-opacity:1;
