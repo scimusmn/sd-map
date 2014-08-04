@@ -322,6 +322,19 @@ Map {
   polygon-fill:#ae8;
 }
 
+#pinutorrwgs84 {
+  line-width:0;
+  polygon-opacity:.9;
+  polygon-fill:#225a40;
+}
+
+#floristicprovinces {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:.5;
+  polygon-fill:#ae8;
+}
+
 #labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
@@ -348,19 +361,6 @@ Map {
 #50m {
   line-width:1;
   line-color:green;
-}
-
-#pinutorrwgs84 {
-  line-width:0;
-  polygon-opacity:.9;
-  polygon-fill:#225a40;
-}
-
-#floristicprovinces {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:.5;
-  polygon-fill:#ae8;
 }
 
 @blank:            transparent;
