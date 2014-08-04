@@ -184,6 +184,26 @@ Map {
   }
 }
 
+/**
+ * Label the highways with SVG chevrons
+ */
+#labels-roads {
+  point-allow-overlap: true;
+  point-transform:"scale(.04)";
+  [Label = 'I-5'] {
+    point-file:url(icons/I-5.svg);
+  }
+  [Label = 'I-8'] {
+    point-file:url(icons/I-8.svg);
+  }
+  [Label = 'I-10'] {
+    point-file:url(icons/I-10.svg);
+  }
+  [Label = 'I-15'] {
+    point-file:url(icons/I-15.svg);
+  }
+}
+
 
 /**
  ******************************************************************************
@@ -296,7 +316,6 @@ Map {
   raster-opacity:1;
 }
 
-
 #labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
@@ -320,22 +339,6 @@ Map {
   }
 }
 
-#labels-roads {
-  point-allow-overlap: true;
-  point-transform:"scale(.04)";
-  [Label = 'I-5'] {
-    point-file:url(icons/I-5.svg);
-  }
-  [Label = 'I-8'] {
-    point-file:url(icons/I-8.svg);
-  }
-  [Label = 'I-10'] {
-    point-file:url(icons/I-10.svg);
-  }
-  [Label = 'I-15'] {
-    point-file:url(icons/I-15.svg);
-  }
-}
 
 
 
