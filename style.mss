@@ -322,10 +322,6 @@ Map {
   polygon-fill:#ae8;
 }
 
-#colorcustomv03 {
-  raster-opacity:1;
-}
-
 #labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
