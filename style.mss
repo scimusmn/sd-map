@@ -388,18 +388,299 @@ Map {
  */
 @no-data: red;
 
-#bath-3000 {
-  polygon-opacity:.3;
-  polygon-fill:#425a75;
-}
+/**
+ *****************************************************************************
+ * Key colors
+ *
+ * Important to design for map appearance
+ *****************************************************************************
+ */
+/**
+ * 20
+ * Rainfed cropland
+ *
+ * Quite common throughout the region. Scattered through the dry areas.
+ * Occurs aat the Salton Sea drainage and along the Colorado River
+ *
+ * orig: rgb(255,255,100)
+ */
+@rainfed-cropland: rgb(255,255,100);
 
-#bath-4000 {
-  polygon-opacity:.3;
-  polygon-fill:#3f5670;
-}
+/**
+ * 20
+ * Mosaic cropland
+ *
+ * Mosaic cropland (50-70%) / vegetation (grassland/shrubland/forest) (20-50%)
+ *
+ * Quite common throughout the region. Scattered through the dry areas.
+ *
+ * orig: rgb(220,240,100)
+ */
+@mosaic-cropland: rgb(220,240,100);
 
+/**
+ * 30
+ * Mosaic vegetation
+ *
+ * Mosaic vegetation (grassland/shrubland/forest) (50-70%) / cropland (20-50%)
+ *
+ * Quite common throughout the region. Scattered through the dry areas.
+ *
+ * orig: rgb(205,205,102)
+ */
+@mosaic-vegetation: rgb(205,205,102);
 
-#50m {
-  line-width:1;
-  line-color:green;
+/**
+ * 40
+ * Mixed broadleaved forest
+ *
+ * Closed to open (>15%) broadleaved evergreen or semi-deciduous forest (>5m)
+ *
+ * Very rare in forests near lakes in Mexico
+ *
+ * orig: rgb(0,100,0)
+ */
+@mixed-broadleaved-forest: rgb(0,100,0);
+
+/**
+ * 50
+ * Closed deciduous forest
+ *
+ * Closed (>40%) broadleaved deciduous forest (>5m)
+ *
+ * This is is more prevelant in NoCal, but still significant in SoCal.
+ * Scatered throughout forests.
+ *
+ * orig: rgb(0,160,0)
+ */
+@closed-decid-forest: rgb(0,160,0);
+
+/**
+ * 60
+ * Open deciduous forest
+ *
+ * Open (15-40%) broadleaved deciduous forest/woodland (>5m)
+ *
+ * Barely present. Scatered throughout forests.
+ *
+ * orig: rgb(170,200,0)
+ */
+@open-decid-forest: rgb(170,200,0);
+
+/**
+ * 70
+ * Closed forest
+ * 
+ * Closed (>40%) needleleaved evergreen forest (>5m)
+ *
+ * This is the dominant forest style, making up most of the forest areas
+ * in SoCal
+ *
+ * orig: rgb(0,60,0)
+ */
+@closed-forest: rgb(0,60,0);
+
+/**
+ * 90
+ * Open forest - NOT PRESENT
+ *
+ * Open (15-40%) needleleaved deciduous or evergreen forest (>5m)
+ *
+ * Barely present. Mostly in areas around lakes in western SoCal
+ *
+ * orig: rgb(40,100,0)
+ */
+@open-forest: rgb(40,100,0);
+
+/**
+ * 100
+ * Mixed needleleaved forest
+ *
+ * Closed to open (>15%) mixed broadleaved and needleleaved forest (>5m)
+ *
+ * Mixed into the centers of the larger forest areas
+ *
+ * orig: rgb(120,130,0)
+ */
+@mixed-needle-forest: rgb(120,130,0);
+
+/**
+ * 110
+ * Mosaic forest
+ *
+ * Mosaic forest or shrubland (50-70%) / grassland (20-50%)
+ *
+ * Sprinkled through the SoCal western lands
+ *
+ * orig: rgb(140,160,0)
+ */
+@mosaic-forest: rgb(140,160,0);
+
+/**
+ * 120
+ * Mosaic grassland
+ *
+ * Mosaic grassland (50-70%) / forest or shrubland (20-50%) 
+ *
+ * Sprinkled through the SoCal western lands
+ *
+ * orig: rgb(190,150,0))
+ */
+@mosaic-grassland: rgb(190,150,0);
+
+/**
+ * 130
+ * Shrubland
+ *
+ * Closed to open (>15%) (broadleaved or needleleaved, evergreen or deciduous) shrubland (<5m)
+ *
+ * This is the majority of the Southern California map. The mountains and all The
+ * dry land out to the east of the state is this clasification.
+ *
+ * orig: rgb(150,100,0)
+ * color: #D5DB99;
+ */
+@shrubland: #D5DB99;
+
+/**
+ * 140
+ * Herbaceous vegetation
+ *
+ * Closed to open (>15%) herbaceous vegetation (grassland, savannas or lichens/mosses)
+ *
+ * This is scattered throughout the southern california area, at the borders
+ * of the forest areas.
+ *
+ * orig: rgb(255,180,50)
+ */
+@herb-veg: rgb(255,180,50);
+
+/**
+ * 150
+ * Sparse vegetation
+ *
+ * Sparse (<15%) vegetation
+ *
+ * Sprinkled along the coast
+ *
+ * orig: rgb(255,235,175)
+ */
+@sparse-veg: rgb(255,235,175);
+
+/**
+ * 160
+ * Forest regularly flooded
+ *
+ * Closed to open (>15%) broadleaved forest regularly flooded (semi-permanently or temporarily) - Fresh or brackish water
+ *
+ * Barely apparent throughout the dry western part of SoCal
+ *
+ * color: #46533f
+ * orig: rgb(0,120,90)
+ */
+@forest-flooded-reg: rgb(0,120,90);
+
+/**
+ * 170
+ * Forest permanently flooded
+ *
+ * Closed (>40%) broadleaved forest or shrubland permanently flooded - Saline or brackish water
+ *
+ * Barely present. Only shows up at the northern end of the Gulf of California
+ * in Mexico.
+ *
+ * color: #46533f
+ * orig: rgb(0,150,120)
+ */
+@forest-flooded-perm: rgb(0,150,120);
+
+/**
+ * 180
+ * Grassland - NOT PRESENT
+ *
+ * Closed to open (>15%) grassland or woody vegetation on regularly flooded or waterlogged soil - Fresh, brackish or saline water
+ *
+ * Very rare, but does show up in single pixels at times.
+ *
+ * color: #6b7e60
+ * orig: rgb(0,220,130)
+ */
+@grassland: rgb(0,220,130);
+
+/**
+ * 190
+ * Urban areas
+ *
+ * Artificial surfaces and associated areas (Urban areas >50%)
+ *
+ * San Diego, Los Angeles
+ *
+ * orig: #e2bf58
+ * mapbox: #E2D9D0
+ * gmap: #E6DFD3
+ */
+/*@urban: #666;*/
+@urban: #E6DFD3;
+
+/**
+ * 200
+ * Bare Areas
+ *
+ * Barely apparent throughout the dry western part of SoCal
+ *
+ * orig: rgb(255,245,215)
+ */
+@bare-areas: rgb(255,245,215);
+
+/**
+ * 210
+ * Water
+ *
+ * color: @wetlands
+ */
+@water: @wetlands;
+
+/**
+ * 220
+ * Snow
+ *
+ * Permanent snow and ice
+ *
+ * Barely present. Only in some high places
+ *
+ * color: #fff
+ */
+@snow: #fff;
+
+#land-cover {
+  /* Commented out for development */
+  raster-scaling:gaussian;
+  raster-opacity: .5;
+  raster-colorizer-default-mode:linear;
+  raster-colorizer-default-color: transparent;
+  raster-colorizer-epsilon:0.41;
+  raster-colorizer-stops:
+    stop(0,transparent,linear)
+    stop(14,@rainfed-cropland)
+    stop(20,@mosaic-cropland)
+    stop(30,@mosaic-vegetation)
+    stop(40,@mixed-broadleaved-forest)
+    stop(50,@closed-decid-forest)
+    stop(60,@open-decid-forest)
+    stop(70,@closed-forest)
+    stop(90,@open-forest)
+    stop(100,@mixed-needle-forest)
+    stop(110,@mosaic-forest)
+    stop(120,@mosaic-grassland)
+    stop(130,@shrubland)
+    stop(140,@herb-veg)
+    stop(150,@sparse-veg)
+    stop(160,@forest-flooded-reg)
+    stop(170,@forest-flooded-perm)
+    stop(180,@grassland)
+    stop(190,@urban)
+    stop(200,@bare-areas)
+    stop(210,@water)
+    stop(220,@snow)
+    stop(230,@no-data)
 }
