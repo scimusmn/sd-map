@@ -64,6 +64,29 @@ Map {
   }
 }
 
+#labels-states {
+  text-name: [Label];
+  text-face-name: 'Futura Medium';
+  text-size: 24;
+  text-fill: #EEE;
+  /*text-fill: #DDD;*/
+  text-opacity: .85;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-halo-radius: 1.5;
+  text-halo-fill: #AAA;
+  text-min-distance: 2;
+  text-placement-type: simple;
+  text-dx: 10;
+  text-dy: 10;
+  text-placements: 'NE';
+  marker-width:0;
+  [Label = 'Mexico'] {
+    text-dx: 5;
+    text-dy: -7;
+  }
+}
+
 #counties-dup,
 #counties {
   ::case {
@@ -308,29 +331,6 @@ Map {
   line-width:0.5;
   polygon-opacity:.5;
   polygon-fill:#ae8;
-}
-
-#labels-states {
-  text-name: [Label];
-  text-face-name: 'Futura Medium';
-  text-size: 24;
-  text-fill: #EEE;
-  /*text-fill: #DDD;*/
-  text-opacity: .85;
-  text-wrap-width: 60;
-  text-wrap-before: true;
-  text-halo-radius: 1.5;
-  text-halo-fill: #AAA;
-  text-min-distance: 2;
-  text-placement-type: simple;
-  text-dx: 10;
-  text-dy: 10;
-  text-placements: 'NE';
-  marker-width:0;
-  [Label = 'Mexico'] {
-    text-dx: 5;
-    text-dy: -7;
-  }
 }
 
 /**
