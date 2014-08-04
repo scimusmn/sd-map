@@ -345,21 +345,16 @@ Map {
   }
 }
 
-
-
-
 #50m {
   line-width:1;
   line-color:green;
 }
-
 
 #pinutorrwgs84 {
   line-width:0;
   polygon-opacity:.9;
   polygon-fill:#225a40;
 }
-
 
 #floristicprovinces {
   line-color:#594;
