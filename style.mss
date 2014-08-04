@@ -15,6 +15,10 @@
 @desert: #225A40;
 @wetlands: #527193;
 @sd-background: #E2D9C2;
+@blank: transparent;
+@unused: #9a9a9a;
+@agriculture: #91a487;
+@grass: #6b7e60;
 
 /**
  * Map background
@@ -320,36 +324,12 @@ Map {
   raster-opacity: .8;
 }
 
-@blank:            transparent;
-@unused:           #9a9a9a;
-@agriculture:      #91a487;
-@grass:            #6b7e60;
-
-/**
- ******************************************************************************
- * Unused colors
- *
- * Part of the GlobCover dataset and legend, but these don't show up in
- * SoCal
- *
- * These are assigned a red color so that they stand out in case they show 
- * up and should be more properly styled.
- ******************************************************************************
- */
-
-/**
- * 230
- * No Data - NOT PRESENT
- *
- * color: #fff
- */
-@no-data: red;
 
 /**
  *****************************************************************************
- * Key colors
+ * Land Cover
  *
- * Important to design for map appearance
+ * Coloring the landscape based on the GlobCover clasifications
  *****************************************************************************
  */
 /**
@@ -609,8 +589,15 @@ Map {
  */
 @snow: #fff;
 
+/**
+ * 230
+ * No Data - NOT PRESENT
+ *
+ * color: #fff
+ */
+@no-data: red;
+
 #land-cover {
-  /* Commented out for development */
   raster-scaling:gaussian;
   raster-opacity: .5;
   raster-colorizer-default-mode:linear;
@@ -644,7 +631,7 @@ Map {
 
 /**
  *****************************************************************************
- * Component specific data
+ * Component specific data layers 
  *****************************************************************************
  */
 
@@ -653,10 +640,12 @@ Map {
  *
  * TODO which is the park and which is the species extent?
  */
-#torreypines {
+#torreypines,
+#torreypines2 {
   line-width:0;
   polygon-opacity:1;
-  polygon-fill:#59a84e;
+  polygon-fill:purple;
+  /*polygon-fill:#59a84e;*/
   /*polygon-fill:#3c5139;*/
   /*polygon-fill:#23c406;*/
   /*polygon-fill:#69813a;*/
