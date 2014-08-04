@@ -372,26 +372,32 @@ Map {
   }
 }
 
-.rivers {
+
+
+#50m {
   line-width:1;
-  line-color:@wetlands;
-  line-opacity: .7;
-  line-join: round;
+  line-color:green;
 }
 
-.lakes {
-  line-color:@wetlands;
+
+#pinutorrwgs84 {
+  line-width:0;
+  polygon-opacity:.9;
+  polygon-fill:#225a40;
+}
+
+
+#floristicprovinces {
+  line-color:#594;
   line-width:0.5;
-  line-opacity: .5;
-  line-join: round;
   polygon-opacity:.5;
-  polygon-fill:@wetlands;
+  polygon-fill:#ae8;
 }
 
-#bath-200 {
-  polygon-opacity:.3;
-  polygon-fill:#4c6887;
-}
+@blank:            transparent;
+@unused:           #9a9a9a;
+@agriculture:      #91a487;
+@grass:            #6b7e60;
 
 #bath-1000 {
   polygon-opacity:.3;
