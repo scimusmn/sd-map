@@ -289,49 +289,6 @@ Map {
 }
 
 /**
- *****************************************************************************
- * Component specific data
- *****************************************************************************
- */
-
-/**
- * Torrey Pines
- *
- * TODO which is the park and which is the species extent?
- */
-#torreypines {
-  line-width:0;
-  polygon-opacity:1;
-  polygon-fill:#59a84e;
-  /*polygon-fill:#3c5139;*/
-  /*polygon-fill:#23c406;*/
-  /*polygon-fill:#69813a;*/
-  /*polygon-fill:#ae8;*/
-  line-join: round;
-  line-cap: round;
-}
-
-#pinutorrwgs84 {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#ae8;
-}
-
-#pinutorrwgs84 {
-  line-width:0;
-  polygon-opacity:.9;
-  polygon-fill:#225a40;
-}
-
-#floristicprovinces {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:.5;
-  polygon-fill:#ae8;
-}
-
-/**
  ******************************************************************************
  * Topography shading
  *
@@ -683,4 +640,47 @@ Map {
     stop(210,@water)
     stop(220,@snow)
     stop(230,@no-data)
+}
+
+/**
+ *****************************************************************************
+ * Component specific data
+ *****************************************************************************
+ */
+
+/**
+ * Torrey Pines
+ *
+ * TODO which is the park and which is the species extent?
+ */
+#torreypines {
+  line-width:0;
+  polygon-opacity:1;
+  polygon-fill:#59a84e;
+  /*polygon-fill:#3c5139;*/
+  /*polygon-fill:#23c406;*/
+  /*polygon-fill:#69813a;*/
+  /*polygon-fill:#ae8;*/
+  line-join: round;
+  line-cap: round;
+}
+
+#pinutorrwgs84 {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
+  polygon-fill:#ae8;
+}
+
+#pinutorrwgs84 {
+  line-width:0;
+  polygon-opacity:.9;
+  polygon-fill:#225a40;
+}
+
+#floristicprovinces {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:.5;
+  polygon-fill:#ae8;
 }
