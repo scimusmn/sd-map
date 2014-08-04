@@ -16,7 +16,6 @@
 @wetlands: #527193;
 @sd-background: #E2D9C2;
 
-
 /**
  * Map background
  */
@@ -25,8 +24,7 @@ Map {
   /*background-color: #e2d9c2;*/
   /*background-color: #b5b9ae;*/
   /*background-color: #AEAB9D*/
-  background-color: #FFF
-
+  background-color: #FFF;
 }
 
 /**
