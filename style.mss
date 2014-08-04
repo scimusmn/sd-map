@@ -7,12 +7,14 @@
 @wetlands: #527193;
 @sd-background: #E2D9C2;
 
+
 Map {
   /*background-color: #69813a;*/
   /*background-color: #e2d9c2;*/
   /*background-color: #b5b9ae;*/
   /*background-color: #AEAB9D*/
-  background-color: #fff;
+  background-color: #FFF
+
 }
 
 #cities {
