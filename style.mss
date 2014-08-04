@@ -368,15 +368,25 @@ Map {
 @agriculture:      #91a487;
 @grass:            #6b7e60;
 
-#bath-1000 {
-  polygon-opacity:.3;
-  polygon-fill:#476280;
-}
+/**
+ ******************************************************************************
+ * Unused colors
+ *
+ * Part of the GlobCover dataset and legend, but these don't show up in
+ * SoCal
+ *
+ * These are assigned a red color so that they stand out in case they show 
+ * up and should be more properly styled.
+ ******************************************************************************
+ */
 
-#bath-2000 {
-  polygon-opacity:.3;
-  polygon-fill:#455e7a;
-}
+/**
+ * 230
+ * No Data - NOT PRESENT
+ *
+ * color: #fff
+ */
+@no-data: red;
 
 #bath-3000 {
   polygon-opacity:.3;
