@@ -101,25 +101,54 @@ Map {
   }
 }
 
+/**
+ * County boundaries
+ */
+
 #counties-dup,
 #counties {
   ::case {
-    line-color:#292622;
+    line-color:#fff;
     line-width:3;
-    /*line-opacity: .8;*/
-    line-comp-op: screen;
+    line-opacity: .15;
+    /*line-comp-op: screen;*/
     line-join: round;
     line-cap: round;
   }
   ::fill {
-    /*line-color:#ADA69D;*/
-    line-color:#7c7368;
-    line-width:1;
-    line-opacity: .4;
+    line-color:#666;
+    line-width: 1;
+    line-opacity: .8;
+    /*line-comp-op: overlay;*/
     line-join: round;
     line-cap: round;
   }
 }
+
+/**
+ * Old county two line style.
+ *
+ * The client didn't like this style very much. It looks a bit too natural
+ */
+/*#counties-dup,*/
+/*#counties {*/
+  /*::case {*/
+    /*line-color:#292622;*/
+    /*line-width:3;*/
+    /*[>line-opacity: .8;<]*/
+    /*line-comp-op: screen;*/
+    /*line-join: round;*/
+    /*line-cap: round;*/
+  /*}*/
+  /*::fill {*/
+    /*[>line-color:#ADA69D;<]*/
+    /*line-color:#7c7368;*/
+    /*line-width:1;*/
+    /*line-opacity: .4;*/
+    /*line-join: round;*/
+    /*line-cap: round;*/
+  /*}*/
+/*}*/
 
 #color-arid,
 #color-warm,
