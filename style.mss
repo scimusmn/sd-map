@@ -267,31 +267,6 @@ Map {
   polygon-fill:#3f5670;
 }
 
-#hillshades,
-#slopes {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-}
-
-#hillshades {
-  raster-opacity: 0.8;
-}
-
-#slopes {
-  raster-opacity: 1;
-}
-
-#color-arid,
-#color-warm,
-#color-arid-warm-mix,
-#color-custom-v01,
-#color-custom-v02,
-#color-custom-v03 {
-  raster-scaling: bilinear;
-  raster-comp-op: multiply;
-  raster-opacity: .8;
-}
-
 /**
  *****************************************************************************
  * Component specific data
@@ -358,9 +333,36 @@ Map {
   }
 }
 
-#50m {
-  line-width:1;
-  line-color:green;
+/**
+ ******************************************************************************
+ * Topography shading
+ *
+ * Simulating topography with hillshades and slopeshades
+ ******************************************************************************
+ */
+#hillshades,
+#slopes {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+}
+
+#hillshades {
+  raster-opacity: 0.8;
+}
+
+#slopes {
+  raster-opacity: 1;
+}
+
+#color-arid,
+#color-warm,
+#color-arid-warm-mix,
+#color-custom-v01,
+#color-custom-v02,
+#color-custom-v03 {
+  raster-scaling: bilinear;
+  raster-comp-op: multiply;
+  raster-opacity: .8;
 }
 
 @blank:            transparent;
