@@ -123,6 +123,34 @@ Map {
   /*}*/
 /*}*/
 
+/**
+ ******************************************************************************
+ * Natural features
+ ******************************************************************************
+ */
+
+/**
+ * Water styles
+ *
+ * Rivers, lakes, and the ocean.
+ *
+ * Bathymetry styles help indicate depth with darker colors.
+ */
+.rivers {
+  line-width:1;
+  line-color:@wetlands;
+  line-opacity: .7;
+  line-join: round;
+}
+
+.lakes {
+  line-color:@wetlands;
+  line-width:0.5;
+  line-opacity: .5;
+  line-join: round;
+  polygon-opacity:.5;
+  polygon-fill:@wetlands;
+}
 
 #ocean {
   polygon-fill:@wetlands;
@@ -131,6 +159,31 @@ Map {
   /*line-color:#6e97c4;*/
   line-width:1;
   line-join: round;
+}
+
+#bath-200 {
+  polygon-opacity:.3;
+  polygon-fill:#4c6887;
+}
+
+#bath-1000 {
+  polygon-opacity:.3;
+  polygon-fill:#476280;
+}
+
+#bath-2000 {
+  polygon-opacity:.3;
+  polygon-fill:#455e7a;
+}
+
+#bath-3000 {
+  polygon-opacity:.3;
+  polygon-fill:#425a75;
+}
+
+#bath-4000 {
+  polygon-opacity:.3;
+  polygon-fill:#3f5670;
 }
 
 #hillshades,
