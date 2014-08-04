@@ -70,7 +70,7 @@ Map {
 }
 
 #hillshades {
-  raster-opacity: 0.6;
+  raster-opacity: 0.8;
 }
 
 #slopes {
