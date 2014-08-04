@@ -150,6 +150,17 @@ Map {
 }
 
 /**
+ * Urban area polygons
+ *
+ * This isn't currently used.
+ */
+#urban-areas {
+  polygon-fill:black;
+  polygon-opacity:.3;
+  /*image-filters: agg-stack-blur(5, 5);*/
+}
+
+/**
  ******************************************************************************
  * Natural features
  ******************************************************************************
@@ -237,11 +248,6 @@ Map {
   raster-opacity: .8;
 }
 
-#urban-areas {
-  polygon-fill:black;
-  polygon-opacity:.3;
-  /*image-filters: agg-stack-blur(5, 5);*/
-}
 
 
 #torreypines {
