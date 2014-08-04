@@ -36,48 +36,34 @@ Map {
  */
 
 /**
- * City markers and text labels
+ * Political boundaries
+ *
+ * Countries, states, and counties
  */
-#cities {
-  text-name: [name];
-  text-face-name: 'Futura Medium';
-  text-size: 18;
-  text-fill: #222;
-  text-wrap-width: 60;
-  text-wrap-before: true;
-  text-halo-radius: 1.5;
-  text-halo-fill: #fff;
-  text-min-distance: 2;
-  text-placement-type: simple;
-  text-dx: 7;
-  text-dy: 7;
-  text-placements: 'NE';
-  text-allow-overlap: true;
-  marker-width:8;
-  marker-fill:@attic;
-  marker-line-color:#FFF;
-  marker-line-width:1;
-  marker-allow-overlap:true;
-  [name = 'Blythe'] {
-    text-placements: 'NW';
-    text-dx: 5;
-    text-dy: 7;
+#us-mex,
+#californiaeast,
+#socalstates,
+#nevada {
+  polygon-opacity:0;
+  polygon-fill:#ae8;
+  ::case {
+    line-color:#fff;
+    line-width:5;
+    line-opacity: .3;
+    line-comp-op: screen;
+    line-join: round;
+    line-cap: round;
   }
-  [name = 'Riverside'] {
-    text-placements: 'SE';
-    text-dx: 5;
-    text-dy: 5;
-  }
-  [name = 'San Diego'] {
-    text-placements: 'SW';
-    text-dx: 10;
-    text-dy: 7;
+  ::fill {
+    line-color:#FFF;
+    line-width:1;
+    line-opacity: .7;
+    line-comp-op: overlay;
+    line-join: round;
+    line-cap: round;
   }
 }
 
-/**
- * County boundaries
- */
 #counties-dup,
 #counties {
   ::case {
@@ -122,6 +108,46 @@ Map {
     /*line-cap: round;*/
   /*}*/
 /*}*/
+
+/**
+ * City markers and text labels
+ */
+#cities {
+  text-name: [name];
+  text-face-name: 'Futura Medium';
+  text-size: 18;
+  text-fill: #222;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-halo-radius: 1.5;
+  text-halo-fill: #fff;
+  text-min-distance: 2;
+  text-placement-type: simple;
+  text-dx: 7;
+  text-dy: 7;
+  text-placements: 'NE';
+  text-allow-overlap: true;
+  marker-width:8;
+  marker-fill:@attic;
+  marker-line-color:#FFF;
+  marker-line-width:1;
+  marker-allow-overlap:true;
+  [name = 'Blythe'] {
+    text-placements: 'NW';
+    text-dx: 5;
+    text-dy: 7;
+  }
+  [name = 'Riverside'] {
+    text-placements: 'SE';
+    text-dx: 5;
+    text-dy: 5;
+  }
+  [name = 'San Diego'] {
+    text-placements: 'SW';
+    text-dx: 10;
+    text-dy: 7;
+  }
+}
 
 /**
  ******************************************************************************
@@ -199,31 +225,6 @@ Map {
 #slopes {
   raster-opacity: 1;
 }
-
-#us-mex,
-#californiaeast,
-#socalstates,
-#nevada {
-  polygon-opacity:0;
-  polygon-fill:#ae8;
-  ::case {
-    line-color:#fff;
-    line-width:5;
-    line-opacity: .3;
-    line-comp-op: screen;
-    line-join: round;
-    line-cap: round;
-  }
-  ::fill {
-    line-color:#FFF;
-    line-width:1;
-    line-opacity: .7;
-    line-comp-op: overlay;
-    line-join: round;
-    line-cap: round;
-  }
-}
-
 
 #color-arid,
 #color-warm,
