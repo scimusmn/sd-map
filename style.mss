@@ -161,6 +161,31 @@ Map {
 }
 
 /**
+ * Highways and roads
+ */
+#i5,
+#i8,
+#i10,
+#i15 {
+  /*line-width:3;*/
+  /*line-opacity:.5;*/
+  /*line-join: round;*/
+  /*line-cap: round;*/
+  /*line-color:#FFF;*/
+  ::case {
+    line-width: 5;
+    line-color:#d83;
+    line-opacity:.3;
+  }
+  ::fill {
+    line-width: 2.5;
+    line-color:#fe3;
+    line-opacity:.3;
+  }
+}
+
+
+/**
  ******************************************************************************
  * Natural features
  ******************************************************************************
@@ -248,8 +273,6 @@ Map {
   raster-opacity: .8;
 }
 
-
-
 #torreypines {
   line-width:0;
   polygon-opacity:1;
@@ -262,70 +285,12 @@ Map {
   line-cap: round;
 }
 
-
 #pinutorrwgs84 {
   line-color:#594;
   line-width:0.5;
   polygon-opacity:1;
   polygon-fill:#ae8;
 }
-
-#i5,
-#i8,
-#i10,
-#i15 {
-  /*line-width:3;*/
-  /*line-opacity:.5;*/
-  /*line-join: round;*/
-  /*line-cap: round;*/
-  /*line-color:#FFF;*/
-  ::case {
-    line-width: 5;
-    line-color:#d83;
-    line-opacity:.3;
-  }
-  ::fill {
-    line-width: 2.5;
-    line-color:#fe3;
-    line-opacity:.3;
-  }
-}
-
-/*#i5 {*/
-  /*[length = 1391.39] {*/
-    /*text-name: [prefix] + ' -' + [number];*/
-    /*text-face-name: 'Futura Medium';*/
-    /*text-size: 14;*/
-    /*text-fill: #222;*/
-    /*text-halo-radius: 1.5;*/
-    /*text-halo-fill: #fff;*/
-    /*text-placement: line;*/
-  /*}*/
-/*}*/
-
-/*#i15 {*/
-  /*[uident = 6133] {*/
-    /*text-name: [prefix] + ' -' + [number];*/
-    /*text-face-name: 'Futura Medium';*/
-    /*text-size: 14;*/
-    /*text-fill: #222;*/
-    /*text-halo-radius: 1.5;*/
-    /*text-halo-fill: #fff;*/
-    /*text-placement: line;*/
-  /*}*/
-/*}*/
-
-/*#i8,*/
-/*#i10 {*/
-    /*text-name: [prefix] + ' -' + [number];*/
-    /*text-face-name: 'Futura Medium';*/
-    /*text-size: 14;*/
-    /*text-fill: #222;*/
-    /*text-halo-radius: 1.5;*/
-    /*text-halo-fill: #fff;*/
-    /*text-placement: line;*/
-/*}*/
-
 
 #colorcustomv03 {
   raster-opacity:1;
