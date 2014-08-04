@@ -88,7 +88,6 @@ Map {
   }
 }
 
-#counties-dup,
 #counties {
   ::case {
     line-color:#fff;
@@ -113,7 +112,6 @@ Map {
  *
  * The client didn't like this style very much. It looks a bit too natural
  */
-/*#counties-dup,*/
 /*#counties {*/
   /*::case {*/
     /*line-color:#292622;*/
