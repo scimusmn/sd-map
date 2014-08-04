@@ -640,9 +640,13 @@ Map {
  *
  * TODO which is the park and which is the species extent?
  */
-#torreypines,
-#torreypines2 {
-  line-width:0;
+
+/**
+ * Torrey Pine species extent
+ */
+.torrey-pine {
+  line-color:pink;
+  line-width:3;
   polygon-opacity:1;
   polygon-fill:purple;
   /*polygon-fill:#59a84e;*/
@@ -654,22 +658,8 @@ Map {
   line-cap: round;
 }
 
-#pinutorrwgs84 {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#ae8;
-}
-
-#pinutorrwgs84 {
-  line-width:0;
-  polygon-opacity:.9;
-  polygon-fill:#225a40;
-}
-
-#floristicprovinces {
-  line-color:#594;
-  line-width:0.5;
+#tp-floristic-provinces {
   polygon-opacity:.5;
-  polygon-fill:#ae8;
+  polygon-fill:purple;
+  line-width:0.5;
 }
