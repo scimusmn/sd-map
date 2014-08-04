@@ -42,10 +42,9 @@ Map {
  *
  * Countries, states, and counties
  */
-#us-mex,
-#californiaeast,
-#socalstates,
-#nevada {
+#border-us-mex,
+#border-california-east,
+#border-nevada {
   polygon-opacity:0;
   polygon-fill:#ae8;
   ::case {
