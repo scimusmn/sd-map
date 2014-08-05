@@ -68,14 +68,14 @@ Map {
 #labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
-  text-size: 28;
+  text-size: 30;
   text-fill: #EEE;
   /*text-fill: #DDD;*/
   text-opacity: .85;
   text-wrap-width: 60;
   text-wrap-before: true;
   text-halo-radius: 1.5;
-  text-halo-fill: #AAA;
+  text-halo-fill: #888;
   text-min-distance: 2;
   text-placement-type: simple;
   text-dx: 10;
