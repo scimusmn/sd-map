@@ -675,37 +675,99 @@ Map {
  */
 @no-data: red;
 
-#land-cover {
+/**
+ * Small isolated agricultural regions
+ */
+/*@one: #DFDFA3;*/
+/*@one: #D3DBB4;*/
+/*@one: #87896B;*/
+/*@one: #9BA88E;*/
+@one: #9FA088;
+
+/**
+ * Most of the dry areas
+/*@two: #D2DB95;*/
+/*@two: #E2D9C2;*/
+/*@two: #EDF1D5;*/
+
+/* This is close. It's just a bit too gree-n. Maybe a little less saturation*/
+/*@two: #BCC699;*/
+@two: #87896A;
+
+
+/** 
+ * Fringes of the forest
+ */
+/*@three: #B5CF7F;*/
+@three: #838C59;
+
+/**
+ * Main forest
+ */
+/*@four: #82965C;*/
+/*@four: #7C9E3A;*/
+@four: #708833;
+
+/*@four: #4F6024;*/
+
+.land-cover {
+  image-filters: blur(1,1);
   raster-scaling:gaussian;
-  raster-opacity: .5;
+  /*raster-scaling:lanczos;*/
+  raster-opacity: .6;
   raster-colorizer-default-mode:linear;
   raster-colorizer-default-color: transparent;
   raster-colorizer-epsilon:0.41;
   raster-colorizer-stops:
     stop(0,transparent,linear)
-    stop(14,@rainfed-cropland)
-    stop(20,@mosaic-cropland)
-    stop(30,@mosaic-vegetation)
-    stop(40,@mixed-broadleaved-forest)
-    stop(50,@closed-decid-forest)
-    stop(60,@open-decid-forest)
-    stop(70,@closed-forest)
-    stop(90,@open-forest)
-    stop(100,@mixed-needle-forest)
-    stop(110,@mosaic-forest)
-    stop(120,@mosaic-grassland)
-    stop(130,@shrubland)
-    stop(140,@herb-veg)
-    stop(150,@sparse-veg)
-    stop(160,@forest-flooded-reg)
-    stop(170,@forest-flooded-perm)
-    stop(180,@grassland)
+    stop(14,@one)
+    stop(20,@one)
+    stop(30,@three)
+    stop(40,@four)
+    stop(50,@four)
+    stop(60,@four)
+    stop(70,@four)
+    stop(90,@four)
+    stop(100,@four)
+    stop(110,@two)
+    stop(120,@four)
+    stop(130,@two)
+    stop(140,@two)
+    stop(150,@two)
+    stop(160,@three)
+    stop(170,@three)
+    stop(180,@two)
     stop(190,@urban)
     stop(200,@bare-areas)
     stop(210,@water)
     stop(220,@snow)
     stop(230,@no-data)
 }
+
+  /*raster-colorizer-stops:*/
+    /*stop(0,transparent,linear)*/
+    /*stop(14,@rainfed-cropland)*/
+    /*stop(20,@mosaic-cropland)*/
+    /*stop(30,@mosaic-vegetation)*/
+    /*stop(40,@mixed-broadleaved-forest)*/
+    /*stop(50,@closed-decid-forest)*/
+    /*stop(60,@open-decid-forest)*/
+    /*stop(70,@closed-forest)*/
+    /*stop(90,@open-forest)*/
+    /*stop(100,@mixed-needle-forest)*/
+    /*stop(110,@mosaic-forest)*/
+    /*stop(120,@mosaic-grassland)*/
+    /*stop(130,@shrubland)*/
+    /*stop(140,@herb-veg)*/
+    /*stop(150,@sparse-veg)*/
+    /*stop(160,@forest-flooded-reg)*/
+    /*stop(170,@forest-flooded-perm)*/
+    /*stop(180,@grassland)*/
+    /*stop(190,@urban)*/
+    /*stop(200,@bare-areas)*/
+    /*stop(210,@water)*/
+    /*stop(220,@snow)*/
+    /*stop(230,@no-data)*/
 
 /**
  *****************************************************************************
