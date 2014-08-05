@@ -628,9 +628,14 @@ Map {
  * orig: #e2bf58
  * mapbox: #E2D9D0
  * gmap: #E6DFD3
+ * nlcd: #563E69
+ * active: #936C6E
  */
-/*@urban: #666;*/
-@urban: #E6DFD3;
+
+/* This is a good mix between the grey-brown and the purple */
+/*@urban: #BAB1B3;*/
+@urban: #5A4E6D;
+/*#665876*/
 
 /**
  * 200
