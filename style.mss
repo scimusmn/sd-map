@@ -393,7 +393,7 @@ Map {
 #color-custom-v03 {
   raster-scaling: bilinear;
   raster-comp-op: multiply;
-  raster-opacity: .8;
+  raster-opacity: .3;
 }
 
 /**
