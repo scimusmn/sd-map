@@ -243,12 +243,16 @@ Map {
   ::case {
     line-width: 5;
     line-color:#d83;
-    line-opacity:.3;
+    line-opacity:.4;
+    line-join: round;
+    line-cap: round;
   }
   ::fill {
     line-width: 2.5;
     line-color:#fe3;
     line-opacity:.3;
+    line-join: round;
+    line-cap: round;
   }
 }
 
