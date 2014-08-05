@@ -290,15 +290,23 @@ Map {
  * Bathymetry styles help indicate depth with darker colors.
  */
 .rivers {
-  line-width:1;
-  line-color:@wetlands;
-  line-opacity: .7;
-  line-join: round;
+  ::case {
+    line-width:2;
+    line-color:@wetlands;
+    line-opacity: .7;
+    line-join: round;
+  }
+  ::fill {
+    line-width:3.5;
+    line-color:white;
+    line-opacity: .25;
+    line-join: round;
+  }
 }
 
 .lakes {
   line-color:white;
-  line-width:1;
+  line-width:.5;
   line-opacity: 1;
   line-join: round;
   polygon-opacity:1;
