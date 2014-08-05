@@ -68,7 +68,7 @@ Map {
 #labels-states {
   text-name: [Label];
   text-face-name: 'Futura Medium';
-  text-size: 24;
+  text-size: 28;
   text-fill: #EEE;
   /*text-fill: #DDD;*/
   text-opacity: .85;
@@ -137,7 +137,7 @@ Map {
 #cities {
   text-name: [name];
   text-face-name: 'Futura Medium';
-  text-size: 18;
+  text-size: 14;
   text-fill: #222;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -149,26 +149,72 @@ Map {
   text-dy: 7;
   text-placements: 'NE';
   text-allow-overlap: true;
-  marker-width:8;
+  marker-width:6;
   marker-fill:@attic;
   marker-line-color:#FFF;
   marker-line-width:1;
   marker-allow-overlap:true;
+
+  /* Pop 20k */
   [name = 'Blythe'] {
+    text-size: 14;
+    text-halo-radius: 1;
     text-placements: 'NW';
     text-dx: 5;
     text-dy: 7;
   }
+
+  /* Pop 45k */
+  [name = 'El Centro'] {
+    text-size: 14;
+    text-halo-radius: 1;
+  }
+
+  /* Pop 45k */
+  [name = 'Palm Spirngs'] {
+    text-size: 14;
+    text-halo-radius: 1;
+  }
+
+  /* Pop 90k */
+  [name = 'Santa Barbara'] {
+    text-placements: 'SW';
+    text-dx: 10;
+    text-dy: 7;
+    text-size: 16;
+    text-halo-radius: 1.2;
+  }
+
+  /* Pop 300k */
   [name = 'Riverside'] {
     text-placements: 'SE';
     text-dx: 5;
     text-dy: 5;
+    text-size: 16;
+    text-halo-radius: 1.2;
   }
+
+  /* Pop 1.3 mil */
+  [name = 'Tijuana'] {
+    text-placements: 'SE';
+    text-dx: 10;
+    text-dy: 7;
+    text-size: 20;
+  }
+
+  /* Pop 1.3 Mil */
   [name = 'San Diego'] {
     text-placements: 'SW';
     text-dx: 10;
     text-dy: 7;
+    text-size: 20;
   }
+
+  /* 3 Mil */
+  [name = 'Los Angeles'] {
+    text-size: 22;
+  }
+
 }
 
 /**
