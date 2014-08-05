@@ -299,11 +299,22 @@ Map {
 #hillshades,
 #slopes {
   raster-scaling: bilinear;
-  raster-comp-op: multiply;
 }
 
 #hillshades {
-  raster-opacity: 0.8;
+  raster-opacity: .8;
+  /**
+   * Overlay is a good candidate for replacing multiply here.
+   * It gives us a much lighter map with some good terrain texture.
+   */
+  /*raster-comp-op: overlay;*/
+
+  /**
+   * Grain merge seems like the best opetion here right now.
+   * It almost adds more contrast to the hillshades than overlay.
+   * It does this without distoring the onderlying land cover colors.
+   */
+  raster-comp-op: grain-merge;
 }
 
 #slopes {
