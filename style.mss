@@ -149,7 +149,7 @@ Map {
   text-dy: 7;
   text-placements: 'NE';
   text-allow-overlap: true;
-  marker-width:6;
+  marker-width:10;
   marker-fill:@attic;
   marker-line-color:#FFF;
   marker-line-width:1;
