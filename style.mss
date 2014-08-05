@@ -247,11 +247,11 @@ Map {
 }
 
 .lakes {
-  line-color:@wetlands;
-  line-width:0.5;
-  line-opacity: .5;
+  line-color:white;
+  line-width:1;
+  line-opacity: 1;
   line-join: round;
-  polygon-opacity:.5;
+  polygon-opacity:1;
   polygon-fill:@wetlands;
 }
 
