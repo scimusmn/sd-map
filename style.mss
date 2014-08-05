@@ -234,7 +234,8 @@ Map {
 #i5,
 #i8,
 #i10,
-#i15 {
+#i15,
+#i215 {
   /*line-width:3;*/
   /*line-opacity:.5;*/
   /*line-join: round;*/
