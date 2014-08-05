@@ -375,8 +375,13 @@ Map {
   raster-comp-op: grain-merge;
 }
 
+/**
+ * Multiply allows the texture of the slopes to show through without
+ * distoring the colors underneath.
+ */
 #slopes {
   raster-opacity: 1;
+  raster-comp-op: multiply;
 }
 
 #color-arid,
@@ -389,7 +394,6 @@ Map {
   raster-comp-op: multiply;
   raster-opacity: .8;
 }
-
 
 /**
  *****************************************************************************
