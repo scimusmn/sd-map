@@ -403,15 +403,17 @@ Map {
  *****************************************************************************
  */
 /**
- * 20
+ * 14
  * Rainfed cropland
  *
  * Quite common throughout the region. Scattered through the dry areas.
- * Occurs aat the Salton Sea drainage and along the Colorado River
+ * Occurs at the Salton Sea drainage and along the Colorado River
  *
  * orig: rgb(255,255,100)
+ * active: #DDE0A4
  */
-@rainfed-cropland: rgb(255,255,100);
+/*@rainfed-cropland: rgb(255,255,100);*/
+@rainfed-cropland: #DDE0A4;
 
 /**
  * 20
@@ -459,8 +461,9 @@ Map {
  * Scatered throughout forests.
  *
  * orig: rgb(0,160,0)
+ * active: #96C493
  */
-@closed-decid-forest: rgb(0,160,0);
+@closed-decid-forest: #96C493;
 
 /**
  * 60
@@ -603,7 +606,7 @@ Map {
 
 /**
  * 180
- * Grassland - NOT PRESENT
+ * Grassland
  *
  * Closed to open (>15%) grassland or woody vegetation on regularly flooded or waterlogged soil - Fresh, brackish or saline water
  *
