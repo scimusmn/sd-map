@@ -190,7 +190,7 @@ Map {
     text-placements: 'SE';
     text-dx: 5;
     text-dy: 5;
-    text-size: 16;
+    text-size: 18;
     text-halo-radius: 1.2;
   }
 
