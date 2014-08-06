@@ -83,8 +83,8 @@ Map {
   text-placements: 'NE';
   marker-width:0;
   [Label = 'Mexico'] {
-    text-dx: 5;
-    text-dy: -7;
+    text-dx: 88;
+    text-dy: -85;
   }
 }
 
