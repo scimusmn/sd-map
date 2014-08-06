@@ -137,7 +137,7 @@ Map {
 #cities {
   text-name: [name];
   text-face-name: 'Futura Medium';
-  text-size: 14;
+  text-size: 16;
   text-fill: #222;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -157,7 +157,7 @@ Map {
 
   /* Pop 20k */
   [name = 'Blythe'] {
-    text-size: 14;
+    text-size: 16;
     text-halo-radius: 1;
     text-placements: 'NW';
     text-dx: 5;
@@ -166,13 +166,13 @@ Map {
 
   /* Pop 45k */
   [name = 'El Centro'] {
-    text-size: 14;
+    text-size: 16;
     text-halo-radius: 1;
   }
 
   /* Pop 45k */
   [name = 'Palm Spirngs'] {
-    text-size: 14;
+    text-size: 16;
     text-halo-radius: 1;
   }
 
