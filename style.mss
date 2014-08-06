@@ -719,6 +719,10 @@ Map {
   raster-colorizer-default-mode:linear;
   raster-colorizer-default-color: transparent;
   raster-colorizer-epsilon:0.41;
+  [zoom = 10] {
+    raster-opacity: .5;
+    raster-comp-op: darken;
+  }
   raster-colorizer-stops:
     stop(0,transparent,linear)
     stop(14,@one)
@@ -782,13 +786,47 @@ Map {
  * TODO which is the park and which is the species extent?
  */
 
-/**
- * Torrey Pine species extent
- */
-.torrey-pine {
+#tp-park {
+  [name = 'Torrey Pines State Natural Reserve'] {
+    text-name: [name];
+    text-face-name: 'Futura Medium';
+    text-size: 20;
+    text-fill: #222;
+    text-wrap-width: 120;
+    text-wrap-before: true;
+    text-halo-radius: 1.5;
+    text-halo-fill: #fff;
+    text-min-distance: 2;
+    text-placement-type: simple;
+    text-dx: 60;
+    text-dy: 0;
+    text-placements: 'SW';
+    text-allow-overlap: true;
+    marker-width:75;
+    marker-fill:transparent;
+    marker-line-color:@attic;
+    marker-line-width:2;
+    marker-allow-overlap:true;
+  }
+  polygon-opacity:1;
+  polygon-fill:@torrey-pines;
+  line-color:white;
+  line-width:.2;
+  line-join: round;
+  line-cap: round;
+  /*image-filters: agg-stack-blur(2, 2);*/
+  /*polygon-fill:#59a84e;*/
+  /*polygon-fill:#3c5139;*/
+  /*polygon-fill:#23c406;*/
+  /*polygon-fill:#69813a;*/
+  /*polygon-fill:#ae8;*/
+}
+
+.to-species-extent {
   line-color:pink;
   line-width:3;
   polygon-opacity:1;
+  image-filters: agg-stack-blur(2, 2);
   polygon-fill:purple;
   /*polygon-fill:#59a84e;*/
   /*polygon-fill:#3c5139;*/
