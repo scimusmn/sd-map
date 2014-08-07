@@ -260,7 +260,7 @@ Map {
 /**
  * Label the highways with SVG chevrons
  */
-#labels-roads {
+.labels-roads {
   point-allow-overlap: true;
   point-transform:"scale(.04)";
   [Label = 'I-5'] {
