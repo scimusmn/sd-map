@@ -818,7 +818,15 @@ Map {
   }
 }
 
-#channelislandslabel {
+#tp-species-extent-marker {
+  marker-width:45;
+  marker-fill:transparent;
+  marker-line-color:@attic;
+  marker-line-width:2;
+  marker-allow-overlap:true;
+}
+
+#labels-channel-islands {
   marker-width:0;
   [Label = 'Channel Islands'] {
     text-name: [Label];
