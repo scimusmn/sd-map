@@ -816,12 +816,6 @@ Map {
     marker-line-width:2;
     marker-allow-overlap:true;
   }
-  /*image-filters: agg-stack-blur(2, 2);*/
-  /*polygon-fill:#59a84e;*/
-  /*polygon-fill:#3c5139;*/
-  /*polygon-fill:#23c406;*/
-  /*polygon-fill:#69813a;*/
-  /*polygon-fill:#ae8;*/
 }
 
 #channelislandslabel {
