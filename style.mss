@@ -785,6 +785,14 @@ Map {
  *
  * TODO which is the park and which is the species extent?
  */
+.torrey-pine {
+  polygon-opacity:.9;
+  polygon-fill:@torrey-pines;
+  line-color:white;
+  line-width:.2;
+  line-join: round;
+  line-cap: round;
+}
 
 #tp-park {
   [name = 'Torrey Pines State Natural Reserve'] {
@@ -808,12 +816,6 @@ Map {
     marker-line-width:2;
     marker-allow-overlap:true;
   }
-  polygon-opacity:1;
-  polygon-fill:@torrey-pines;
-  line-color:white;
-  line-width:.2;
-  line-join: round;
-  line-cap: round;
   /*image-filters: agg-stack-blur(2, 2);*/
   /*polygon-fill:#59a84e;*/
   /*polygon-fill:#3c5139;*/
