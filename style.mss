@@ -481,7 +481,7 @@ Map {
 /**
  * 70
  * Closed forest
- * 
+ *
  * Closed (>40%) needleleaved evergreen forest (>5m)
  *
  * This is the dominant forest style, making up most of the forest areas
@@ -531,7 +531,7 @@ Map {
  * 120
  * Mosaic grassland
  *
- * Mosaic grassland (50-70%) / forest or shrubland (20-50%) 
+ * Mosaic grassland (50-70%) / forest or shrubland (20-50%)
  *
  * Sprinkled through the SoCal western lands
  *
@@ -678,38 +678,59 @@ Map {
 
 /**
  * Small isolated agricultural regions
+ * Color One
  */
-/*@one: #DFDFA3;*/
-/*@one: #D3DBB4;*/
-/*@one: #87896B;*/
-/*@one: #9BA88E;*/
+/*@one: #9FA088;*/
 @one: #9FA088;
 
 /**
- * Most of the dry areas
-/*@two: #D2DB95;*/
-/*@two: #E2D9C2;*/
-/*@two: #EDF1D5;*/
+ * Alternates
+ * @one: #DFDFA3;
+ * @one: #D3DBB4;
+ * @one: #87896B;
+ * @one: #9BA88E;
+ */
 
-/* This is close. It's just a bit too gree-n. Maybe a little less saturation*/
-/*@two: #BCC699;*/
+/**
+ * Most of the dry areas
+ * Color two
+ */
+/*@two: #87896A;*/
 @two: #87896A;
 
-
-/** 
- * Fringes of the forest
+/**
+ * Alternates
+ * @two: #D2DB95;
+ * @two: #E2D9C2;
+ * @two: #EDF1D5;
+ * @two: #BCC699;
  */
-/*@three: #B5CF7F;*/
+
+/**
+ * Fringes of the forest
+ * Color three
+ */
+/*@three: #838C59;*/
 @three: #838C59;
 
 /**
- * Main forest
+ * Alternates
+ * @three: #B5CF7F;
  */
-/*@four: #82965C;*/
-/*@four: #7C9E3A;*/
+
+/**
+ * Main forest
+ * Color four
+ */
+/*@four: #708833;*/
 @four: #708833;
 
-/*@four: #4F6024;*/
+/**
+ * Alternates
+ * @four: #82965C;
+ * @four: #7C9E3A;
+ * @four: #4F6024;
+ */
 
 .land-cover {
   image-filters: blur(1,1);
@@ -776,7 +797,7 @@ Map {
 
 /**
  *****************************************************************************
- * Component specific data layers 
+ * Component specific data layers
  *****************************************************************************
  */
 
