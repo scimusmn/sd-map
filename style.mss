@@ -824,19 +824,27 @@ Map {
   /*polygon-fill:#ae8;*/
 }
 
-.to-species-extent {
-  line-color:pink;
-  line-width:3;
-  polygon-opacity:1;
-  image-filters: agg-stack-blur(2, 2);
-  polygon-fill:purple;
-  /*polygon-fill:#59a84e;*/
-  /*polygon-fill:#3c5139;*/
-  /*polygon-fill:#23c406;*/
-  /*polygon-fill:#69813a;*/
-  /*polygon-fill:#ae8;*/
-  line-join: round;
-  line-cap: round;
+#channelislandslabel {
+  marker-width:0;
+  [Label = 'Channel Islands'] {
+    text-name: [Label];
+    marker-allow-overlap:true;
+    marker-ignore-placement:true;
+    text-face-name: 'Futura Medium';
+    text-size: 14;
+    text-fill: #222;
+    text-wrap-width: 120;
+    text-wrap-before: true;
+    text-halo-radius: 1.2;
+    text-halo-fill: #fff;
+    text-min-distance: 2;
+    text-placement-type: simple;
+    text-dx: 0;
+    text-dy: 60;
+    text-placements: 'SW';
+    text-allow-overlap: true;
+    marker-width:0;
+  }
 }
 
 #tp-floristic-provinces {
