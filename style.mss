@@ -782,10 +782,10 @@ Map {
 
 /**
  * Torrey Pines
- *
- * TODO which is the park and which is the species extent?
  */
-.torrey-pine {
+
+#tp-park,
+#tp-species-extent {
   polygon-opacity:.9;
   polygon-fill:@torrey-pines;
   line-color:white;
