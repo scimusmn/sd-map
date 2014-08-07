@@ -850,7 +850,25 @@ Map {
 }
 
 #tp-floristic-provinces {
-  polygon-opacity:.5;
-  polygon-fill:purple;
-  line-width:0.5;
+  ::caser {
+    polygon-opacity:.3;
+    polygon-fill:@torrey-pines;
+    line-width:10;
+    line-color:#193F2C;
+    image-filters: agg-stack-blur(20, 20);
+  }
+  ::case {
+    polygon-opacity:.3;
+    polygon-fill:@torrey-pines;
+    line-width:0;
+    line-color:white;
+    image-filters: agg-stack-blur(50, 50);
+  }
+  ::line {
+    polygon-opacity:.6;
+    polygon-fill:@torrey-pines;
+    line-width:.5;
+    line-color:white;
+    /*image-filters: agg-stack-blur(2, 2, 5, 5);*/
+  }
 }
