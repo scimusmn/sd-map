@@ -851,6 +851,33 @@ Map {
  */
 
 /**
+ * Wetlands
+ */
+#lagoon {
+  [Label = 'Los Peñaquitos Lagoon'] {
+    text-name: [Label];
+    text-face-name: 'Futura Medium';
+    text-size: 20;
+    text-fill: #222;
+    text-wrap-width: 120;
+    text-wrap-before: true;
+    text-halo-radius: 1.5;
+    text-halo-fill: #fff;
+    text-min-distance: 2;
+    text-placement-type: simple;
+    text-dx: 60;
+    text-dy: 0;
+    text-placements: 'SW';
+    text-allow-overlap: true;
+    marker-width:75;
+    marker-fill:transparent;
+    marker-line-color:@attic;
+    marker-line-width:2;
+    marker-allow-overlap:true;
+  }
+}
+
+/**
  * Torrey Pines
  */
 
@@ -941,4 +968,15 @@ Map {
     line-color:white;
     /*image-filters: agg-stack-blur(2, 2, 5, 5);*/
   }
+}
+
+#wetland-present,
+#wetland-historic {
+  line-color:red;
+  line-width:0;
+  line-opacity:1;
+  line-join: round;
+  line-cap: round;
+  polygon-opacity:1;
+  polygon-fill:@mountains;
 }
