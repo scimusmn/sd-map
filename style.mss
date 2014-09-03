@@ -28,6 +28,16 @@ Map {
   /*background-color: #e2d9c2;*/
   /*background-color: #b5b9ae;*/
   /*background-color: #AEAB9D*/
+
+  /**
+   * Use when you need to export a transparent single layer PNG
+   * such as Wetland extent
+   */
+  /*background-color: transparent;*/
+
+  /**
+   * THis is the default background color
+   */
   background-color: #FFF;
 }
 
@@ -321,29 +331,59 @@ Map {
   /*line-color:#6e97c4;*/
   line-width:1;
   line-join: round;
+
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity: .2;*/
 }
 
 #bath-200 {
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity:.01;*/
+
   polygon-opacity:.3;
   polygon-fill:#4c6887;
 }
 
 #bath-1000 {
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity:.01;*/
+
   polygon-opacity:.3;
   polygon-fill:#476280;
 }
 
 #bath-2000 {
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity:.01;*/
+
   polygon-opacity:.3;
   polygon-fill:#455e7a;
 }
 
 #bath-3000 {
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity:.01;*/
+
   polygon-opacity:.3;
   polygon-fill:#425a75;
 }
 
 #bath-4000 {
+  /**
+   * Use for greyscale map
+   */
+  /*polygon-opacity:.01;*/
+
   polygon-opacity:.3;
   polygon-fill:#3f5670;
 }
@@ -395,6 +435,15 @@ Map {
   raster-comp-op: multiply;
   raster-opacity: .3;
 }
+
+/**
+ * Use for greyscale map
+ *
+ * You'll also need to turn this layer on in TileMill
+ */
+/*#color-arid {*/
+  /*raster-opacity: .1;*/
+/*}*/
 
 /**
  *****************************************************************************
